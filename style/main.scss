@@ -1,0 +1,18 @@
+@import "variables";
+
+
+html {
+  height: 100%;
+  width: 100%;
+  //background: #f3f3f3;
+}
+
+body {
+  background: url("../img/152.png") fixed;
+  margin: 0;
+  color: $main_color_dark;
+}
+
+
+@import "blocks/main_info";
+@import "blocks/works";
