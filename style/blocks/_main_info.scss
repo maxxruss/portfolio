@@ -15,7 +15,7 @@
 }
 
 .photo {
-  background: url("../../img/my_photo.jpg") no-repeat center;
+  background: url("../img/my_photo.jpg") no-repeat center;
   background-size: cover;
   width: 320px;
   height: 320px;
@@ -47,17 +47,17 @@
 .contact {
   .main_info__item {
     &:nth-child(1) {
-      background: url("../../img/call.png") no-repeat left center;
+      background: url("../img/call.png") no-repeat left center;
       background-size: contain;
     }
 
     &:nth-child(2) {
-      background: url("../../img/domain.png") no-repeat left center;
+      background: url("../img/domain.png") no-repeat left center;
       background-size: contain;
     }
 
     &:nth-child(3) {
-      background: url("../../img/email.png") no-repeat left center;
+      background: url("../img/email.png") no-repeat left center;
       background-size: contain;
     }
   }

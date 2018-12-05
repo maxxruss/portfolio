@@ -1,0 +1,7 @@
+.idea
+
+node_modules/
+
+gulpfile.js
+
+style/main.css
