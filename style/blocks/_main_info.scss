@@ -4,7 +4,8 @@
 }
 
 .personal {
-  max-width: 350px;
+  //max-width: 350px;
+  min-width: 350px;
   height: $main_info_height;
   background: $main_background;
   margin-right: 20px;
@@ -12,6 +13,9 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 10px 10px 20px 0 rgba(0, 1, 1, 0.2);
+  @include media-breakpoint-down(sm) {
+    max-width: 500px;
+  }
 }
 
 .photo {
@@ -22,6 +26,10 @@
   border: 1px solid white;
   border-radius: 50%;
   margin: 20px auto;
+  //@include media-breakpoint-down(lg) {
+  //width: 230px;
+  //height: 230px;
+  //}
 }
 
 .main_info__header {
@@ -100,10 +108,16 @@
 }
 
 .experience {
-  max-width: 750px;
   height: $main_info_height;
+  min-width: 350px;
   background: #ffffff;
   box-shadow: 10px 10px 20px 0 rgba(0, 1, 1, 0.2);
+  @include media-breakpoint-down(md) {
+margin-top: 60px  }
+  @include media-breakpoint-down(sm) {
+    max-width: 500px;
+    height: auto;
+  }
 }
 
 .main_info__header_name {
@@ -125,7 +139,15 @@
   margin: 20px auto;
 }
 
+.btn {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 .card-body {
+
   text-align: center;
 }
 
@@ -150,21 +172,7 @@
 }
 
 .main_info__link_resume {
-  border: 1px solid;
-  width: 250px;
-  height: 50px;
-  border-radius: 25px;
-  line-height: 50px;
-  text-align: center;
-  background: transparent;
-  color: $main_color_dark;
-  margin: auto;
-  a {
-    color: $main_color_dark;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-  }
+  @include button;
 }
 
 .main_info__skills_list {
@@ -180,6 +188,10 @@
   &:nth-child(2n) {
     align-self: flex-end;
   }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 .fontAwesome {
@@ -188,6 +200,9 @@
 
 .icon {
   float: left;
+  @include media-breakpoint-down(sm) {
+    margin: 0 10% 0 0;
+  }
 }
 
 .main_info__skills_item {
@@ -198,6 +213,14 @@
   line-height: 55px;
   height: inherit;
   padding-left: 80px;
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    line-height: 55px;
+  }
+  @include media-breakpoint-down(xs) {
+    height: auto;
+    line-height: inherit;
+  }
 }
 
 
