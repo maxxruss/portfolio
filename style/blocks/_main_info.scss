@@ -15,6 +15,7 @@
   box-shadow: 10px 10px 20px 0 rgba(0, 1, 1, 0.2);
   @include media-breakpoint-down(sm) {
     max-width: 500px;
+    margin: auto;
   }
 }
 
@@ -73,6 +74,7 @@
   .main_info__item_data {
     padding-left: 80px;
     color: white;
+
     a {
       color: white;
     }
@@ -100,6 +102,7 @@
 .interest {
   .main_info__item {
     color: white;
+
     i {
       color: inherit;
       margin: 0 20px 0 0;
@@ -113,7 +116,8 @@
   background: #ffffff;
   box-shadow: 10px 10px 20px 0 rgba(0, 1, 1, 0.2);
   @include media-breakpoint-down(md) {
-margin-top: 60px  }
+    margin: 60px auto 0;
+  }
   @include media-breakpoint-down(sm) {
     max-width: 500px;
     height: auto;
@@ -182,12 +186,15 @@ margin-top: 60px  }
 
 .main_info__skills_item {
   width: 400px;
+
   &:nth-child(n) {
     align-self: flex-start;
   }
+
   &:nth-child(2n) {
     align-self: flex-end;
   }
+
   @include media-breakpoint-down(sm) {
     width: 100%;
     margin: 20px 0;
